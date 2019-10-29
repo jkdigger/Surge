@@ -15,3 +15,10 @@ AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFI
 # mjappaz.yefu365.com, www.3ivf.com, mjapp.whetyy.com, www.ledpingweixiu.com
 URL-REGEX,https:\/\/www.3ivf\.com\/index\.php\/app\/android\/ads\/index,REJECT-TINYGIF
 URL-REGEX,https:\/\/mjappaz\.yefu365\.com\/index\.php\/app\/ios\/ver\/index_ios,REJECT-TINYGIF
+
+# 高德地图
+DOMAIN,optimus-ads.amap.com
+URL-REGEX,"^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash"
+# 百度地图
+DOMAIN,map-mobile-opnimg.cdn.bcebos.com
+AND,((IP-CIDR,0.0.0.0/0,no-resolve), (USER-AGENT,%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE*))
