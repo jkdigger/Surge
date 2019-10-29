@@ -1,0 +1,4 @@
+# Pixiv 需要日区才能登入,可以用脚本伪装IP
+DOMAIN-SUFFIX,pixiv.org
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pximg.net

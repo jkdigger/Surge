@@ -1,0 +1,4 @@
+# 用于测速
+# > Speedtest by Ookla
+USER-AGENT,SpeedTest*
+DOMAIN-KEYWORD,speedtest

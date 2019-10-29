@@ -1,0 +1,98 @@
+# > 自定义黑名单
+# 注意：以下只要非国内节点就可以使用，对IP没有要求
+# > TikTok
+USER-AGENT,TikTok*
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-KEYWORD,-tiktokcdn-com
+DOMAIN-SUFFIX,pstatp.com
+
+# > PayPal
+USER-AGENT,PayPal*
+DOMAIN-KEYWORD,paypal
+DOMAIN-SUFFIX,paypal.com
+
+# > OneDrive
+PROCESS-NAME,OneDrive
+PROCESS-NAME,OneDriveUpdater
+USER-AGENT,OneDrive*
+USER-AGENT,OneDriveiOSApp*
+
+# > Microsoft
+DOMAIN-SUFFIX,onedrive.live.com
+DOMAIN-SUFFIX,xboxlive.com
+# >> Microsoft OneDrive
+DOMAIN-SUFFIX,1drv.com
+DOMAIN-SUFFIX,1drv.ms
+DOMAIN-SUFFIX,blob.core.windows.net
+DOMAIN-SUFFIX,livefilestore.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,storage.live.com
+DOMAIN-SUFFIX,storage.msn.com
+DOMAIN,oneclient.sfx.ms
+
+# > Facebook
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fbaddins.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbworkmail.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,m.me
+DOMAIN-SUFFIX,messenger.com
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-SUFFIX,oculuscdn.com
+DOMAIN-SUFFIX,rocksdb.org
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-KEYWORD,facebook
+IP-CIDR,3.123.36.126/32,no-resolve
+IP-CIDR,35.157.215.84/32,no-resolve
+IP-CIDR,35.157.217.255/32,no-resolve
+IP-CIDR,52.58.209.134/32,no-resolve
+IP-CIDR,54.93.124.31/32,no-resolve
+IP-CIDR,54.162.243.80/32,no-resolve
+IP-CIDR,54.173.34.141/32,no-resolve
+IP-CIDR,54.235.23.242/32,no-resolve
+IP-CIDR,169.45.248.118/32,no-resolve
+
+# > Pornhub
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,pornhubpremium.com
+
+# Xvideos
+DOMAIN-SUFFIX,xvideos.com
+DOMAIN-SUFFIX,xvideos-cdn.com
+
+# > Twitter
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,vine.co
+DOMAIN-KEYWORD,twitter
+
+# > Telegram
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org
+IP-CIDR,67.198.55.0/24,no-resolve
+IP-CIDR,91.108.4.0/22,no-resolve
+IP-CIDR,91.108.8.0/22,no-resolve
+IP-CIDR,91.108.12.0/22,no-resolve
+IP-CIDR,91.108.16.0/22,no-resolve
+IP-CIDR,91.108.56.0/22,no-resolve
+IP-CIDR,109.239.140.0/24,no-resolve
+IP-CIDR,149.154.160.0/20,no-resolve
+IP-CIDR,149.154.164.0/22,no-resolve
+IP-CIDR,149.154.168.0/22,no-resolve
+IP-CIDR,149.154.172.0/22,no-resolve
+IP-CIDR,205.172.60.0/22,no-resolve

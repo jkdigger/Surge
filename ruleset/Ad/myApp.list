@@ -1,0 +1,36 @@
+//Google&&Youtube
+DOMAIN,mtalk.google.com
+DOMAIN,suggestqueries.google.com
+DOMAIN,www.googleadservices.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-KEYWORD,adservice
+DOMAIN,www.google-analytics.com
+
+# 中国联通
+URL-REGEX,"^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm$"
+
+# 中国移动
+URL-REGEX,"^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit$"
+
+# 中国电信
+URL-REGEX,"^http:\/\/image1\.chinatelecom-ec\.com\/images\/.*\/client\w+\.jpg$"
+
+# 有道翻译官
+DOMAIN,gorgon.youdao.com
+URL-REGEX,"^http:\/\/oral\.youdao\.com\/oral\/adInfo"
+URL-REGEX,"^http:\/\/impservice\.dictapp\.youdao\.com\/imp\/request"
+# 酷我音乐
+URL-REGEX,"^http:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/adinfo"
+# 天翼生活
+URL-REGEX,"^http:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*Animation$"
+# 高德地图
+DOMAIN,optimus-ads.amap.com
+URL-REGEX,"^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash"
+# 百度地图
+DOMAIN,map-mobile-opnimg.cdn.bcebos.com
+AND,((IP-CIDR,0.0.0.0/0,no-resolve), (USER-AGENT,%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE*))
+# 百度网盘
+URL-REGEX,"^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adx"
+URL-REGEX,"^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry"
+# 铁路12306
+DOMAIN,ad.12306.cn
