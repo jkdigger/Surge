@@ -1,6 +1,3 @@
-/surge_remote_js.conf
-/直连模式测试规则.conf
-/surge_local_js.conf
-/refer/*
-/script/checkin.js
+/surge1106.conf
 /directTest.conf
+/refer

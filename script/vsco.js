@@ -1,6 +1,8 @@
 /*
 
 hostname = vsco.co
+http-response ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/  requires-body=1,script-path=script/vsco.js
+
 */
 var body = $response.body;
 var url = $request.url;
