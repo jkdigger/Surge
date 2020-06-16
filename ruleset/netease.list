@@ -1,0 +1,26 @@
+# > 音乐：网易云音乐开屏广告
+URL-REGEX,https?://interface3?.music.163.com/eapi/(ad|abtest|sp|hot|mlivestream|store|mlog|search/(specialkeyword|defaultkeyword|hot)),REJECT-TINYGIF
+AND,((USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*), (OR,((NOT,((DOMAIN-SUFFIX,music.126.net))), (DOMAIN-KEYWORD,admusic)))),REJECT-TINYGIF
+AND,((USER-AGENT,NeteaseMusic*), (NOT,((URL-REGEX,https?://interface3?.music.163.com)))),REJECT-TINYGIF
+USER-AGENT,neteasemusic*,REJECT-TINYGIF
+# > NetEase
+DOMAIN,ad.bn.netease.com
+DOMAIN,ad.yixin.im
+DOMAIN,admusicpic.music.126.net
+DOMAIN,gorgon.youdao.com
+DOMAIN,iadmat.nosdn.127.net
+DOMAIN,iadmusicmat.music.126.net
+DOMAIN,iadmusicmatvideo.music.126.net
+DOMAIN,impservice.dictapp.youdao.com
+DOMAIN,impservice.youdao.com
+DOMAIN,log.yex.youdao.com
+DOMAIN,log-yex.youdao.com
+DOMAIN,n.3g.163.com
+DOMAIN,nex.163.com
+DOMAIN,yt-adp.nosdn.127.net
+DOMAIN,yt-adp.ws.126.net
+# > NetEase CloudMusic
+URL-REGEX,^https?:\/\/.+\/eapi\/(ad|log)\/
+# > NetEase Youdao
+URL-REGEX,^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish
+URL-REGEX,^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\?
