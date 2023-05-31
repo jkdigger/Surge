@@ -1,0 +1,14 @@
+#!name=Block YouTube Advertising
+#!desc=来自lhie1，ios上可用
+#!system=ios
+
+[URL Rewrite]
+(^https?:\/\/(?!redirector)[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+)(ctier=L)(&.+) $1$4 header
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+(&oad|ctier) - reject
+
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
+^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= - reject
+
+[MITM]
+hostname = %APPEND% *.googlevideo.com,www.youtube.com,s.youtube.com
